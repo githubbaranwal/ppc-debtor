@@ -7,6 +7,9 @@ Service for tracking Direct Debit payment debtors.
 ## Application Overview
 The application allows for a certificate reference, expiry date, and value amount of debt to be recorded. Every 21 days (SLA), a simple workflow will escalate the record for the user to manually send a reminder letter of the debt.
 
+# Compile
+1) Select a Maven profile (Eclipse) which will import the Spring Boot JPA starter dependency.
+
 # Running
 ## Execution
 ```
