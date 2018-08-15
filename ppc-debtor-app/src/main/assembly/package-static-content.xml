@@ -1,0 +1,35 @@
+<assembly>
+    <id>bundle</id>
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>    
+    <fileSets>
+        <fileSet>
+            <directory>../ppc-debtor-app/src/main/resources/static</directory>
+    		<outputDirectory>ppc-debtor-webapp-static</outputDirectory>
+	    <includes>
+	      <include>**/*.js</include>
+	      <include>**/*.JS</include>
+	      <include>**/*.gif</include>
+	      <include>**/*.GIF</include>
+	      <include>**/*.jpg</include>
+	      <include>**/*.JPG</include>
+	      <include>**/*.jpeg</include>
+	      <include>**/*.JPEG</include>
+	      <include>**/*.png</include>
+	      <include>**/*.PNG</include>
+	      <include>**/*.htm</include>
+	      <include>**/*.HTM</include>
+	      <include>**/*.css</include>
+	      <include>**/*.CSS</include>
+	      <include>**/*.css.map</include>
+	      <include>**/*.CSS.MAP</include>
+	      <include>**/*.svg</include>
+		  <include>**/*.SVG</include>
+		  <include>**/*.html</include>
+		  <include>**/*.HTML</include>
+	    </includes>
+        </fileSet>
+    </fileSets>
+</assembly> 

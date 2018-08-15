@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Header fragment</title>
+</head>
+<body>
+	<header role="banner" id="global-header" th:fragment="header">
+		<div class="header-container">
+			<a href="/" th:href="@{/}" class="header-logo" title="Go to the homepage"><img th:src="@{/images/bsa_logo.svg}" alt="NHSBSA logo"/></a>
+		</div>
+		<div class="header-swoosh"></div>
+		<div class="prototype-warning">
+			<div class="prototype-warning-container">
+				<p><span>PPC Direct Debit Debtors</span></p>
+			</div>
+		</div>
+	</header>
+</body>
+</html>

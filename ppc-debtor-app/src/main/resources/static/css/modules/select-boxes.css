@@ -1,0 +1,62 @@
+/*
+Syntax error: Undefined mixin 'box-sizing'.
+        on line 14 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/select-boxes.scss, in `box-sizing'
+        from line 14 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/select-boxes.scss
+
+9: // Styles the native select control
+10: 
+11: select.form-select{
+12: 
+13:   width: 100%;
+14:   @include box-sizing(border-box);
+15: 
+16:   //@include core-19;
+17:   padding: 5px 45px 4px 10px;
+18:   background-color: #fff;
+19:   background: #FFF url(/public/images/toggle-sprite-grey.png) no-repeat 100% -50px;
+
+Backtrace:
+C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/select-boxes.scss:14:in `box-sizing'
+C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/select-boxes.scss:14
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:7:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/root_node.rb:20:in `render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:203:in `update_stylesheets'
+org/jruby/RubyArray.java:1620:in `each'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin.rb:81:in `update_stylesheets'
+<script>:20:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'box-sizing'.\A         on line 14 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/select-boxes.scss, in `box-sizing'\A         from line 14 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/select-boxes.scss\A \A 9: // Styles the native select control\A 10: \A 11: select.form-select{\A 12: \A 13:   width: 100%;\A 14:   @include box-sizing(border-box);\A 15: \A 16:   //@include core-19;\A 17:   padding: 5px 45px 4px 10px;\A 18:   background-color: #fff;\A 19:   background: #FFF url(/public/images/toggle-sprite-grey.png) no-repeat 100% -50px;"; }

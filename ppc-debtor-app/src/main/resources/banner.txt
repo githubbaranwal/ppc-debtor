@@ -1,0 +1,8 @@
+
+------------------------------------------------
+            PPC DEBTOR APP                                                                       
+------------------------------------------------       
+  
+Implementation-Title: ${application.title}                                                                          
+Implementation-Version: ${application.version}
+Spring Boot Version: ${spring-boot.version}

@@ -1,0 +1,60 @@
+/*
+Syntax error: Undefined variable: "$white".
+        on line 4 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/nhs-template.scss
+
+1: // NHS template
+2: 
+3: body {
+4:   background: $white;
+5: }
+6: 
+7: #global-header {
+8:   background-color: $nhs-blue;
+9:   border-bottom: 6px solid #e5f0f9;
+
+Backtrace:
+C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/nhs-template.scss:4
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/variable.rb:49:in `_perform'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/node.rb:40:in `perform'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:7:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/root_node.rb:20:in `render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:203:in `update_stylesheets'
+org/jruby/RubyArray.java:1620:in `each'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin.rb:81:in `update_stylesheets'
+<script>:20:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$white\".\A         on line 4 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/modules/nhs-template.scss\A \A 1: // NHS template\A 2: \A 3: body {\A 4:   background: $white;\A 5: }\A 6: \A 7: #global-header {\A 8:   background-color: $nhs-blue;\A 9:   border-bottom: 6px solid #e5f0f9;"; }

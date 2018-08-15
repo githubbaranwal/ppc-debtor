@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PPC Direct Debit Debtors</title>
+
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+
+<link th:href="@{/css/govuk_css/govuk-template.css?0.12.0}" media="screen" rel="stylesheet" type="text/css" />
+<link th:href="@{/css/nhs_fonts.css}" media="all" rel="stylesheet" type="text/css" />
+<link th:href="@{/css/nhs_application.css}" media="screen" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+	
+	<div th:replace="includes/header :: header"></div>
+
+    <main id="content" role="main">
+        <div class="grid-row">
+			<div class="column-full">
+    				<div id="back"><a th:href="@{/}">Back</a></div>
+    			<h2 class="heading-large">Work Item ID: <span th:text="${workitem.id}">1</span></h2>
+			    <table>
+					<thead>
+						<tr>
+							<th>Status</th>
+							<th>Reference</th>
+							<th>Expiry</th>
+							<th>Last modified by</th>
+							<th>Last modified</th>
+							<th>Escalate date</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td th:text="${workitem.workItemStatus.statusText}"></td>
+							<td th:text="${workitem.reference}"></td>
+							<td th:text="${#calendars.format(workitem.expiryDate,'dd-MMM-yyyy')}">01-JAN-2017</td>
+							<td th:text="${workitem.lastModifiedBy}"></td>
+							<td th:text="${#calendars.format(workitem.lastModified,'dd-MMM-yyyy HH:mm:ss')}">01-JAN-2017</td>
+							<td th:text="${#calendars.format(workitem.escalateDate,'dd-MMM-yyyy')}">01-Jan-2017</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div th:if="${not #lists.isEmpty(workitemStatuses)}">
+					<h3 class="heading-medium">Update</h3>
+					<div class="form">
+						<form th:action="@{/item/update}" method="POST" th:object="${workitem}">
+						
+						<fieldset>
+							<input type="hidden" name="id" th:value="${workitem.id}" />
+							<p>
+							    <label for="nextWorkitemStatus">Change certificate state:</label>
+							    <select name="workitemStatus" class="form-select">
+							       <option th:each="status : ${workitemStatuses}" th:value="${status}" th:text="${status.statusText}">INIT</option>
+							    </select>
+							</p>
+							<div class="subbut"><button id="submit" name="submit" class="button">Submit</button></div>
+						</fieldset>
+						</form>
+					</div>
+				</div>
+				<div th:if="${#lists.isEmpty(workitemStatuses)}">
+				    <p>No updates can be made to closed work items</p>
+				</div>
+			</div>
+		</div>	
+	</main>
+	
+	<div th:replace="includes/footer :: footer"></div>
+</body>
+</html>

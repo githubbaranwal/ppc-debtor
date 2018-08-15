@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta charset="ISO-8859-1"/>
+<title>Footer fragment</title>
+</head>
+<body>
+<footer id="footer" role="contentinfo" th:fragment="footer">
+  <div class="footer-wrapper">
+    <div class="text">
+      <p><small>Copyright &copy; <span th:text="${#dates.format(#dates.createNow(), 'yyyy')}"/> NHS Business Services Authority</small></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

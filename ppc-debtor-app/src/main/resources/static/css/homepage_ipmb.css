@@ -1,0 +1,83 @@
+/*
+Syntax error: Invalid CSS after "  break-0": expected ")", was ": 0,     // 0px..."
+        on line 9 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/typography/_variables.scss
+        from line 11 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/homepage_ipmb.scss
+
+4: // Note: For the following Sass maps enter values as if they would be px units.
+5: 
+6: // Breakpoint sizes from px to ems. Add more values here to add more breakpoints.
+7: // Change names if you prefer, it wont break the mixin as long as they are strings not just numbers.
+8: $breakpoints: (
+9:   break-0: 0,     // 0px       Mobile first
+10:   break-1: 640   // 640px   ~ Small tablet up
+11: ) !default;
+12: 
+13: // Root font-sizes for each breakpoint. Set to half desired line-height of body text.
+14: // ! Make sure to have as many sizes as breakpoints above.
+
+Backtrace:
+C:/git/matex-hcp-site/src/main/webapp/resources/sass/typography/_variables.scss:9
+C:/git/matex-hcp-site/src/main/webapp/resources/sass/homepage_ipmb.scss:11
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:1147:in `expected'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/lexer.rb:199:in `expected!'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:476:in `assert_tok'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:426:in `paren'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:411:in `special_fun'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:406:in `raw'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:330:in `funcall'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:319:in `ident'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:237:in `unary_not'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:237:in `unary_div'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:237:in `unary_minus'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:237:in `unary_plus'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:225:in `times_div_or_mod'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:225:in `plus_or_minus'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:225:in `relational'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:225:in `eq_or_neq'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:225:in `and_expr'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:225:in `or_expr'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:298:in `space'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:246:in `expr'
+org/jruby/RubyKernel.java:2105:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:470:in `assert_expr'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/script/parser.rb:49:in `parse'
+org/jruby/RubyKernel.java:2105:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:1022:in `sass_script'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:514:in `variable'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:553:in `block_child'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:543:in `block_contents'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:82:in `stylesheet'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/scss/parser.rb:27:in `parse'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:342:in `_to_tree'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:272:in `to_tree'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+org/jruby/RubyArray.java:2339:in `collect'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:109:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/base.rb:37:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:100:in `visit'
+org/jruby/RubyKernel.java:2109:in `send'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/visitors/perform.rb:7:in `visit'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/tree/root_node.rb:20:in `render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:315:in `_render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/engine.rb:262:in `render'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:203:in `update_stylesheets'
+org/jruby/RubyArray.java:1620:in `each'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+file:c:/maven_repository/org/jasig/maven/sass-maven-plugin/1.1.1/sass-maven-plugin-1.1.1.jar!/gems/sass-3.2.8/lib/sass/plugin.rb:81:in `update_stylesheets'
+<script>:20:in `(root)'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"  break-0\": expected \")\", was \": 0,     // 0px...\"\A         on line 9 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/typography/_variables.scss\A         from line 11 of C:/git/matex-hcp-site/src/main/webapp/resources/sass/homepage_ipmb.scss\A \A 4: // Note: For the following Sass maps enter values as if they would be px units.\A 5: \A 6: // Breakpoint sizes from px to ems. Add more values here to add more breakpoints.\A 7: // Change names if you prefer, it wont break the mixin as long as they are strings not just numbers.\A 8: $breakpoints: (\A 9:   break-0: 0,     // 0px       Mobile first\A 10:   break-1: 640   // 640px   ~ Small tablet up\A 11: ) !default;\A 12: \A 13: // Root font-sizes for each breakpoint. Set to half desired line-height of body text.\A 14: // ! Make sure to have as many sizes as breakpoints above."; }

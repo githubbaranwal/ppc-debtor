@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>PPC Direct Debit Debtors</title>
+
+<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon"/>
+
+<link th:href="@{/css/govuk_css/govuk-template.css?0.12.0}" media="screen" rel="stylesheet" type="text/css" />
+<link th:href="@{/css/nhs_fonts.css}" media="all" rel="stylesheet" type="text/css" />
+<link th:href="@{/css/nhs_application.css}" media="screen" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+	<script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+	
+	<div th:replace="includes/header :: header"></div>
+
+	<main id="content" role="main">
+	    <div class="grid-row">
+			<div class="column-full">
+
+				<div id="back"><a th:href="@{/}">Back</a></div>
+
+				<h2 class="heading-large"><span th:text="${workitemTitle}"></span></h2>
+
+		   		<section>
+					<table class="table" th:if="${workitems.isEmpty() == false}">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Status</th>
+								<th>Reference</th>
+								<th>Expiry</th>
+								<th>Amount (&pound;)</th>
+								<th>Last modified</th>
+								<th>Escalate date</th>
+							</tr>
+						</thead>
+						<tbody>
+						   <tr th:each="workitem : ${workitems}">
+						       <td><a th:href="@{'/item/'+${workitem.id}}" th:text="${workitem.id}">123</a></td>
+						       <td><span th:text="${workitem.workItemStatus.statusText}">INIT</span></td>
+						       <td><span th:text="${workitem.reference}">12345678</span></td>
+						       <td><span th:text="${#calendars.format(workitem.expiryDate,'dd-MMM-yyyy')}">01-Jan-2017</span></td>
+						       <td th:text="${#numbers.formatDecimal(workitem.amount, 1, 2)}"></td>
+						       <td><span th:text="${#calendars.format(workitem.lastModified,'dd-MMM-yyyy HH:mm:ss')}">01-Jan-2017</span></td>
+						       <td><span th:text="${#calendars.format(workitem.escalateDate,'dd-MMM-yyyy')}">01-Jan-2017</span></td>
+						   </tr>
+						</tbody>
+					</table>
+				</section>
+		
+				<p>
+		    		<a th:href="@{/new}" class="button">Add a new debtor</a>
+				</p>
+			</div>
+		</div>
+	</main>
+
+	<div th:replace="includes/footer :: footer"></div>
+</body>
+</html>

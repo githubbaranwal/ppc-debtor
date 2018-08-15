@@ -1,0 +1,90 @@
+input[type='checkbox'],
+input[type='radio'] {
+  display: none;
+}
+
+.form-control-checkbox,
+.form-control-radio {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: auto;
+  float: left;
+  min-height: 4rem;
+  line-height: 2rem;
+  margin: 0;
+  padding: 1rem 2rem 1rem 4rem;
+  background-color: #eff3f5;
+}
+.form-control-checkbox:hover,
+.form-control-radio:hover {
+  cursor: pointer;
+  outline: 1px solid #231f20;
+}
+.form-control-checkbox:focus,
+.form-control-radio:focus {
+  outline: 3px solid #FFED00;
+}
+.form-control-checkbox.minor,
+.form-control-radio.minor {
+  padding-left: 3rem;
+  background-color: transparent;
+}
+.form-control-checkbox.minor:hover,
+.form-control-radio.minor:hover {
+  outline: none;
+  text-decoration: underline;
+}
+
+.form-control-checkbox:before,
+.form-control-radio:before {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  top: 0.9rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #fff;
+  border: 1px solid #231f20;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #b9d2dc;
+  -moz-box-shadow: inset 0px 0px 0px 2px #b9d2dc;
+  box-shadow: inset 0px 0px 0px 2px #b9d2dc;
+}
+
+.form-control-radio:before {
+  border-radius: 100%;
+  outline: 0;
+  border: 1px solid #231f20;
+  box-shadow: inset 0px 0px 0px 2px #b9d2dc;
+}
+
+.form-control-checkbox.minor:before,
+.form-control-radio.minor:before {
+  left: 0rem;
+}
+
+input[type='checkbox']:checked + .form-control-checkbox:before {
+  content: "";
+  background: #fff url(/public/images/tick.png) no-repeat 1px 1px;
+  background-size: 91%;
+}
+
+input[type='radio']:checked + .form-control-radio:before {
+  content: "&#9899;";
+  line-height: 2rem;
+  font-size: 30px;
+  text-indent: 2px;
+}
+@media screen and (min-width: 40em) {
+  input[type='radio']:checked + .form-control-radio:before {
+    font-size: 32px;
+    text-indent: 3px;
+  }
+}
+
+/*# sourceMappingURL=radios-and-checkboxes.css.map */
